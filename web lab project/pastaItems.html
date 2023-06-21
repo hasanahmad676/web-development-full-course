@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+      integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./pastaItem.js"></script>
+    <title>Pasta Items</title>
+  </head>
+  <body>
+    <div class="ui container">
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image"
+                src="https://www.allrecipes.com/thmb/ktsOR109puG-L49p6El21UM0hso=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3359675-Worlds-Best-Lasagna-Photo-by-TheWickedNoodle-650x465-f8f044c9305f4f0ca93a9438fa660ef1.jpg"
+              />
+              <h1 class="header middle aligned content item-name">Lasagna</h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price: 235</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="pasta1"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image"
+                src="https://www.allrecipes.com/thmb/GqC709pDXFpVH1pAFBxUnVHV3uQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3583309-312e59c9f3784aa3b206319ee34eb5c6.jpg"
+              />
+              <h1 class="header middle aligned content item-name">
+                Angel Hair Pasta
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price: 215</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="pasta2"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image"
+                src="https://www.allrecipes.com/thmb/MIUEgFQqjqSd1iCBiekdsyEIqMQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/122627_Bow-Ties-with-Sausage-Tomatoes-and-Cream_Photo-by-Elijah-3b861a830595401da6c617cfd91ac22b.jpg"
+              />
+              <h1 class="header middle aligned content item-name">
+                Bow Tie Pasta
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price:215</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="pasta3"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <h1 id="total-price">Total Price: 0 TK</h1>
+      <button class="positive ui button pizzaButton" onClick="handlePayment()">
+        Proced to pay
+      </button>
+    </div>
+  </body>
+</html>

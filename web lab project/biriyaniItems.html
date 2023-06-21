@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+      integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./biriyaniItem.js"></script>
+    <title>Biriyani Items</title>
+  </head>
+  <body>
+    <div class="ui container">
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image biriyaniImage"
+                src="https://scontent.fdac135-1.fna.fbcdn.net/v/t1.6435-9/61798957_2281400718843140_4631788767475138560_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=NGW_8g_gx3gAX9CF-r6&_nc_ht=scontent.fdac135-1.fna&oh=00_AfCqbttvK4j2NboPW-SQftiG7mwylKZcISBcVhjipZprIg&oe=6399A42D"
+              />
+              <h1 class="header middle aligned content item-name">
+                Sultani Kacchi
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price: 420</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="biriyani1"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image biriyaniImage"
+                src="https://images.deliveryhero.io/image/fd-bd/LH/f40s-hero.jpg"
+              />
+              <h1 class="header middle aligned content item-name">
+                Mughol Kacchi
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price: 1149</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="biriyani2"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image biriyaniImage"
+                src="https://assets.telegraphindia.com/abp/2022/Jan/1643025388_9d34032a-744f-4efc-9d76-4268449314e2-1.jpg"
+              />
+              <h1 class="header middle aligned content item-name">
+                Morog Polaw
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price:150</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="biriyani3"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <h1 id="total-price">Total Price: 0 TK</h1>
+      <button class="positive ui button pizzaButton" onClick="handlePayment()">
+        Proced to pay
+      </button>
+    </div>
+  </body>
+</html>

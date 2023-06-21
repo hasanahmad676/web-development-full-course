@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+      integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./drinksItem.js"></script>
+    <title>Drinks Items</title>
+  </head>
+  <body>
+    <div class="ui container">
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image biriyaniImage"
+                src="https://www.ingredientsnetwork.com/47/pdcnewsitem/11/40/74/cocacola-is-world-s-most-valuable-drink-brand-but.jpeg"
+              />
+              <h1 class="header middle aligned content item-name">Coca Cola</h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price: 30</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="drink1"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image biriyaniImage"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLHc0Xufh5eGLamCM3X9XwfB4_BUo9RrNlOgQPgGjIhvhKNSt5DKNBEO8dkvw4fvoqnTM&usqp=CAU"
+              />
+              <h1 class="header middle aligned content item-name">
+                Mountain Dew
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price: 30</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="drink2"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image biriyaniImage"
+                src="https://www.acouplecooks.com/wp-content/uploads/2020/06/Mango-Smoothie-007-735x919.jpg"
+              />
+              <h1 class="header middle aligned content item-name">
+                Mango Smoothie
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price:180</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="drink3"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image biriyaniImage"
+                src="https://www.acouplecooks.com/wp-content/uploads/2020/04/Strawberry-Smoothie-003-735x919.jpg"
+              />
+              <h1 class="header middle aligned content item-name">
+                Strawberry Smoothie
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price:180</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="drink4"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <h1 id="total-price">Total Price: 0 TK</h1>
+      <button class="positive ui button pizzaButton" onClick="handlePayment()">
+        Proced to pay
+      </button>
+    </div>
+  </body>
+</html>

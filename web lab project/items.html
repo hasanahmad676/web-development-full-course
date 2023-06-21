@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+      integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
+    <title>Items</title>
+  </head>
+  <body>
+    <div class="ui three stackable cards">
+      <div class="card">
+        <div class="ui slide masked reveal image">
+          <img src="/Images/burger1.jpg" class="visible content" />
+          <img src="/Images/burger2.jpg" class="hidden content" />
+        </div>
+        <div class="content">
+          <p class="header">Burger</p>
+          <div class="meta">
+            <span class="date"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+            >
+          </div>
+        </div>
+        <div onclick="toBurgerItems()" class="ui bottom attached button">
+          <i class="add icon"></i>
+          Add to cart
+        </div>
+      </div>
+      <div class="card">
+        <div class="ui slide masked reveal image">
+          <img src="/images/pizza1.jpg" class="visible content" />
+          <img src="/images/pizza2.jpg" class="hidden content" />
+        </div>
+        <div class="content">
+          <p class="header">Pizza</p>
+          <div class="meta">
+            <span class="date"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+            >
+          </div>
+        </div>
+        <div onclick="toPizzaItems()" class="ui bottom attached button">
+          <i class="add icon"></i>
+          Add to cart
+        </div>
+      </div>
+      <div class="card">
+        <div class="ui slide masked reveal image">
+          <img src="/images/pasta3.jfif" class="visible content" />
+          <img src="/images/pasta1.jpg" class="hidden content" />
+        </div>
+        <div class="content">
+          <p class="header">Pasta</p>
+          <div class="meta">
+            <span class="date"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+            >
+          </div>
+        </div>
+        <div onclick="toPastaItems()" class="ui bottom attached button">
+          <i class="add icon"></i>
+          Add to cart
+        </div>
+      </div>
+      <div class="card">
+        <div class="ui slide masked reveal image">
+          <img src="/images/biri.jpg" class="visible content" />
+          <img src="/images/biri2.jpg" class="hidden content" />
+        </div>
+        <div class="content">
+          <p class="header">Biriyani</p>
+          <div class="meta">
+            <span class="date"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+            >
+          </div>
+        </div>
+        <div onclick="toBiriyaniItems()" class="ui bottom attached button">
+          <i class="add icon"></i>
+          Add to cart
+        </div>
+      </div>
+      <div class="card">
+        <div class="ui slide masked reveal image">
+          <img src="/Images/fries.jfif" class="visible content" />
+          <img src="/Images/fries2.jfif" class="hidden content" />
+        </div>
+        <div class="content">
+          <p class="header">French Fry</p>
+          <div class="meta">
+            <span class="date"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+            >
+          </div>
+        </div>
+        <div onclick="toFriesItems()" class="ui bottom attached button">
+          <i class="add icon"></i>
+          Add to cart
+        </div>
+      </div>
+      <div class="card">
+        <div class="ui slide masked reveal image">
+          <img src="/Images/drinks.jpg" class="visible content" />
+          <img src="./images/drinks2.jpg" class="hidden content" />
+        </div>
+        <div class="content">
+          <p class="header">Drinks</p>
+          <div class="meta">
+            <span class="date"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+            >
+          </div>
+        </div>
+        <div onclick="toDrinksItems()" class="ui bottom attached button">
+          <i class="add icon"></i>
+          Add to cart
+        </div>
+      </div>
+    </div>
+
+    <div class="ui footer center aligned segment footer-div">
+      <button onclick="toAboutUs()" class="ui orange button footer-btn">
+        About Us
+      </button>
+    </div>
+  </body>
+</html>

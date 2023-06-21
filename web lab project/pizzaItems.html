@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+      integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./pizzaItem.js"></script>
+    <title>Pizza Items</title>
+  </head>
+  <body>
+    <div class="ui container pizzaItems">
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image pizzaImage"
+                src="https://www.pizzahutbd.com/attached_images/products/170/FtR7FuDJrvwv40V.JPEG"
+              />
+              <h1 class="header middle aligned content item-name">
+                Classic Beef
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price: 549</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="pizza1"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image pizzaImage"
+                src="https://www.pizzahutbd.com/attached_images/products/329/7Li201OyGfDKnGJ.JPEG"
+              />
+              <h1 class="header middle aligned content item-name">
+                Ultimate Hot Chicken
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price: 289</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="pizza2"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="ui grid segment">
+        <div class="eight wide column">
+          <div class="ui items">
+            <div class="item">
+              <img
+                class="ui medium image pizzaImage"
+                src="https://www.pizzahutbd.com/attached_images/products/330/ywulRdtyKwq1tSM.JPEG"
+              />
+              <h1 class="header middle aligned content item-name">
+                Classic Chicken Sausage
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="four wide column middle aligned">
+          <h2>Unit Price: 889</h2>
+        </div>
+        <div class="four wide column middle aligned">
+          <div class="ui input">
+            <input
+              id="pizza3"
+              type="number"
+              class="quantity"
+              name="tentacles"
+              min="0"
+              max="100"
+              value="0"
+              onchange="updateValue()"
+            />
+          </div>
+        </div>
+      </div>
+      <h1 id="total-price">Total Price: 0 TK</h1>
+      <button class="positive ui button pizzaButton" onClick="handlePayment()">
+        Proced to pay
+      </button>
+    </div>
+  </body>
+</html>

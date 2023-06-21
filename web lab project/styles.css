@@ -1,0 +1,231 @@
+body {
+  background-color: #b4cde6;
+  background: #b4cde6 !important;
+
+  margin: 0;
+}
+.background {
+  width: 100%; /*width of your image*/
+  height: 100vh; /*height of your image*/
+  background-image: url("./Images/background.jpg");
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+  overflow: hidden;
+}
+.home {
+  background-color: #f5efe6;
+  height: 300px;
+  width: 45%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 26px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: transparent;
+  /* display: inline-block;
+  vertical-align: top; */
+  text-align: center;
+}
+.heading {
+  color: #3c2317;
+  margin-bottom: 50px;
+  font-family: "Fredoka One", cursive;
+  font-size: 50px;
+  background: transparent;
+}
+
+.btn {
+  font-family: "Bree Serif", serif;
+  font-weight: 0;
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0066cc 0%, #d62828 100%);
+  padding: 10px 47px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 22px 50px;
+  transition: 327ms;
+  transform: translateY(0);
+}
+
+.btn:hover {
+  transition: 327ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background: linear-gradient(90deg, #0066cc 0%, #d62828 100%);
+  color: #ffffff;
+  border: none;
+}
+.auth-background {
+  width: 100%; /*width of your image*/
+  height: 100vh; /*height of your image*/
+  background-image: url("https://i.pinimg.com/originals/3f/12/26/3f12264cad7f964c30ec0af37c19154a.png");
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+  overflow: hidden;
+}
+.auth-container {
+  position: relative;
+  top: 30%;
+}
+
+.ui.container.loginForm {
+  width: 45%;
+  height: 400px;
+  background-color: #f5efe6;
+  /* max-width: 50%; */
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.login-header {
+  font-family: "Fredoka One", cursive;
+  font-size: 3rem;
+  margin-top: 30px !important;
+}
+.ui.button.login-button {
+  margin-top: 15px;
+}
+.forget-password {
+  font-size: 1.5rem;
+}
+label {
+  font-size: 1.5rem !important;
+  margin-bottom: 5px !important;
+}
+.ui.three.cards {
+  margin-top: 4rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* .ui.items > .item > .content {
+  flex: 0;
+} */
+.content {
+  text-align: left;
+  /* display: flex; */
+}
+.items-list {
+  position: relative;
+  top: 4em;
+  background-color: #f5efe6;
+}
+.item-name {
+  font-size: 2em !important;
+}
+.item-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-quantity {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.cards-segment {
+  display: inline-block;
+}
+.payment-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.payment-img {
+  height: 250px !important;
+}
+.confirm-segment {
+  min-width: 50%;
+  margin: 0 auto !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+#mobileNum {
+  border: 2px solid rgba(34, 36, 38, 0.15);
+  text-align: center;
+  font-size: 1.5rem;
+}
+#pin {
+  border: 2px solid rgba(34, 36, 38, 0.15);
+  text-align: center;
+  font-size: 1.5rem;
+}
+#confirmPayButton {
+  font-size: 1.5rem;
+}
+.signupForm {
+  background-color: #f5efe6 !important;
+  /* max-width: 50%; */
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.pizzaButton {
+  margin-bottom: 30px !important;
+}
+.pizzaImage {
+  height: 250px !important;
+  width: 250px !important;
+}
+.biriyaniImage {
+  height: 250px !important;
+  width: 350px !important;
+}
+.about-us-container {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.about-us-header {
+  font-family: "Fredoka One", cursive;
+  font-size: 3rem;
+  margin-top: 30px !important;
+}
+.about-us-segment {
+  position: absolute;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+.about-content {
+  display: flex !important;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.name-header {
+  font-size: 3rem !important;
+  font-family: "Fredoka One", cursive;
+  margin: 2rem 0 2rem 0;
+}
+.info {
+  line-height: 0rem;
+}
+
+.about-image {
+  height: 290px;
+  width: 300px;
+}
+.footer-div {
+  padding: 8rem 1em;
+  height: 100px;
+  position: relative;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-btn {
+  font-size: 1.5rem !important;
+}
